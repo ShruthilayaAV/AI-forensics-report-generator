@@ -1,0 +1,4 @@
+Vulnerability Class: OS Command Injection (CWE-78)
+Detection Signature: Look for system shell delimiters or execution characters embedded within application request vectors. 
+Key Identifiers: Semicolons (;), logical operators (&&, ||), command substitution primitives (backticks or $()), or pipe streams (|).
+Associated Binaries: Post-exploitation activity often features system discovery utilities such as whoami, id, uname, hostname, or network reconnaissance tools like ping and curl.

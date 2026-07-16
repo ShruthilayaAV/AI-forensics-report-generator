@@ -1,0 +1,6 @@
+google-genai
+chromadb
+numpy
+opencv-python
+mediapipe
+scikit-learn

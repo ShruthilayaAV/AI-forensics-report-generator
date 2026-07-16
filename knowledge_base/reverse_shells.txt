@@ -1,0 +1,7 @@
+Vulnerability Class: Command and Control - Interactive Reverse Shell Pivot (CWE-74 / ATT&CK T1059)
+Description: A post-exploitation tactic where a compromised host initiates an outbound socket connection back to an attacker-controlled system, redirecting an interactive system shell (like bash or cmd.exe) over the established network stream.
+
+Detection Signatures & Indicators:
+- Process Architecture: Look for low-privilege system daemon accounts (e.g., www-data, apache, nobody, local service) spawning persistent, interactive command-line child execution blocks.
+- Network Utilities: Active system processes running common binary networking utilities used for port redirection or raw socket handling, including netcat (nc), ncat, socat, python socket modules, or perl network runtimes.
+- Terminal Handlers: Explicit terminal interface flags or native shell invocations wrapped into network streams, such as "-e /bin/bash", "-e /bin/sh", "bash -i", "cmd.exe /c", or references targeting virtual pseudo-terminals (/dev/tcp/, /dev/udp/).

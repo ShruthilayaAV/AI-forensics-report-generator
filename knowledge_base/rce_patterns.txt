@@ -1,0 +1,7 @@
+Vulnerability Class: Remote Code Execution / Arbitrary Code Execution (CWE-94 / CWE-434)
+Description: Occurs when an attacker forces an application to execute untrusted code or scripts within the server runtime context, often via unrestricted file uploads or unsafe evaluation routines.
+
+Detection Signatures & Indicators:
+- Parameter Vectors: Look for server-side evaluation directives, input arguments, or query strings handling runtime code triggers (e.g., ?cmd=, ?exec=, ?run=, ?eval=, ?shell=).
+- Script File Extensions: Direct HTTP GET or POST requests targeting web shell extensions inside accessible storage pools or media upload directories (e.g., .php, .jsp, .asp, .aspx, .phtml, .py, .pl).
+- Obfuscation & Encoding: Look for payload variations utilizing URL encoding (%20, %2b), hex configurations, base64 data wrappers, or null-byte injections used to bypass standard input sanitation rules.
