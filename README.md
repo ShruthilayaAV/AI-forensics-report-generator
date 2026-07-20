@@ -1,13 +1,13 @@
 # AI-Driven Digital Forensics Investigation Bot
 
-An AI-powered Digital Forensics and Incident Response (DFIR) assistant that automates forensic evidence collection, Linux log analysis, and structured forensic report generation using **Python**, **ChromaDB**, **Retrieval-Augmented Generation (RAG)**, and **Google Gemini AI**.
+An AI-powered Digital Forensics and Incident Response (DFIR) assistant that automates forensic evidence collection, log analysis, and structured forensic report generation using **Python**, **ChromaDB**, **Retrieval-Augmented Generation (RAG)**, and **Google Gemini AI**.
 
 ---
 
 ## Features
 
 - AI-assisted forensic investigation
-- Linux process and log analysis
+- Process and log analysis
 - Retrieval-Augmented Generation (RAG)
 - ChromaDB knowledge retrieval
 - Automated forensic report generation
@@ -126,7 +126,7 @@ Sample reports are available in the **Sample_Reports** directory.
 ## How It Works
 
 1. Investigator provides a Process ID and timestamp.
-2. Linux telemetry is collected from system processes and logs.
+2. Telemetry is collected from system processes and logs.
 3. Relevant cybersecurity knowledge is retrieved using ChromaDB.
 4. Gemini AI analyzes the collected evidence.
 5. A structured Digital Forensics and Incident Response (DFIR) report is generated.
@@ -139,7 +139,6 @@ Sample reports are available in the **Sample_Reports** directory.
 - Google Gemini API
 - ChromaDB
 - Retrieval-Augmented Generation (RAG)
-- Linux
 - HTML
 - Digital Forensics
 - Incident Response (DFIR)
